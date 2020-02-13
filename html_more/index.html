@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ol>li{
+            color: red;
+        }
+        input[type=text] {
+            background-color: red;
+        }
+        input[type=number] {
+            background-color: yellow;
+        }
+        button{
+            width:200px;
+            height:50px;
+            font-size:24px;
+            background-color: green;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        a::before {
+            content: "\21d2 Click Here: ";
+            font-weight: bold;
+        }
+        p::selection {
+            color:red;
+            background-color: yellow;
+        }
+        @media print {
+            .screen-only {
+                display: none;
+            }
+        }
+        @media (min-width: 500px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media (max-width: 499px) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media (min-width: 500px){
+            h1::before {
+                content: "Welcome to my webpages";
+            }
+        }
+        @media (max-width: 499px){
+            h1::before {
+                content: "Ezequiel";
+            }
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container > div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        .grid {
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;  /*make resposinve */
+        }
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>list item one</li>
+        <li>list item two</li>
+        <ul>
+            <li>Sublist item one</li>
+            <li>Sublist item two</li>
+        </ul>
+        <li>list item three</li>
+    </ol>
+    <form>
+        <input name="name" type="text" placeholder="First Name">
+        <input name="name" type="text" placeholder="Last Name">
+        <input name="name" type="number" placeholder="Age">
+
+    </form>
+    <button>Click me!</button>
+    <ul>
+        <li><a href="#"> One Link</a></li>
+        <li><a href="#"> Another Link</a></li>
+        <li><a href="#"> Third Link</a></li>
+    </ul>
+    <p>Hello eveybody</p>
+    <p class="screen-only"> this will not appear when try to print.</p>
+    <h1></h1>
+    <div id="container">
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+        <div>A. impulse correlaton, pearson reiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+    </div>
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+    </div>
+</body>
+</html>
