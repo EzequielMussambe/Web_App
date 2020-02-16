@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+</head>
+<body>
+<!--    THIS IS CONDITIONAL     {% if new_year %} condition inside of html in case we want to display huge 
+    stuff or display images or other stuff that would be overhelmed in the python
+        <h1>YES! Happy New Year!</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}--> 
+    <!--<h1>{{headline}}</h1>-->
+
+<!--
+    THIS IS LOOPING
+    <h1>Names</h1>
+    <ul>
+    {% for name in names %}
+        <li>{{name}}</li>
+    {% endfor %}
+    </ul>-->
+
+<!-- THIS IS WAY TO HERDAR TEMPLATES
+    {% extends "layout.html" %}
+    {% block heading %}
+        FIRST PAGE
+    {% endblock %}
+    {% block body %}
+        <P> SEE THE FIRST PAGE RIGHT HERE BOY</P>
+        <a href="{{url_for('more')}}">See more</a>
+    {% endblock %}-->
+    <!--{% extends "layout.html" %}
+    {% block heading %}
+        FIRST PAGE
+    {% endblock %}
+    
+    {% block body %}-->
+        <form action="{{ url_for('hello')}}" method="post"> 
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <button>Submit</button>
+        </form>
+    <!--{% endblock %}-->
+</body>
+</html>
